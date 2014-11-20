@@ -19,6 +19,8 @@ RUN sed -i 's/;extension=openssl.so/extension=openssl.so/g' /etc/php/php.ini
 RUN sed -i 's/;extension=pdo_pgsql.so/extension=pdo_pgsql.so/g' /etc/php/php.ini
 RUN sed -i 's/;extension=pdo_mysql.so/extension=pdo_mysql.so/g' /etc/php/php.ini
 RUN sed -i 's/;extension=pdo_sqlite.so/extension=pdo_sqlite.so/g' /etc/php/php.ini
+RUN sed -i 's/;extension=zip.so/extension=zip.so/g' /etc/php/php.ini
+
 
 RUN sed -i 's/;extension=xcache.so/extension=xcache.so/g' /etc/php/conf.d/xcache.ini
 
